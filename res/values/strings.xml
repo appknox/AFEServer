@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Android Framework for Exploitation v2</string>
+    <string name="hello_world">Hello AFE!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="servertoggle">ServerToggle</string>
+
+</resources>
