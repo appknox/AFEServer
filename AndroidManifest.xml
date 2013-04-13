@@ -1,34 +1,41 @@
-
-<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.afe.socket"
+    package="com.afe.socketapp"
     android:versionCode="1"
     android:versionName="1.0" >
 
-    <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="16" />
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-sdk 
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
 
+    <uses-permission android:name="android.permission.INTERNET"> </uses-permission>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"> </uses-permission>
+    
     <application
-        android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
+        android:allowBackup="false"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.afe.socket.MainActivity"
-            android:label="@string/app_name" >
+            android:name=".SocketActivity"
+            android:label="@string/title_activity_socket" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name="Server"></service>
-        <activity android:name="ExportedContent" android:theme="@style/Invisible"></activity>
-        <activity android:name="getContent" android:theme="@style/Invisible"></activity>
-        
+          <service android:name="Server"></service>
+        <activity android:name=".ExportedContent"></activity>
+        <activity android:name=".getContent"></activity>
+             <activity android:name=".JSONParser"></activity>
+         <activity android:name=".PluginActivity"></activity>
+          <activity android:name=".Shell"></activity>
+          <activity android:name=".recvfile"></activity>
+          <activity android:name=".TCPServer"></activity>
+          <activity android:name=".stopcapture"></activity>
+          <activity android:name=".captureme"></activity>
+            <activity android:name=".BountyActivity"></activity>
+             <activity android:name=".credits"></activity>
     </application>
 
 </manifest>
