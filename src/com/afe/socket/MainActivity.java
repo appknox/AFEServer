@@ -15,6 +15,8 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+    	StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+    	StrictMode.setThreadPolicy(policy); 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
       //Assign this variable to toggle switch
